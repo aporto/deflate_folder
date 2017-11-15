@@ -1,6 +1,6 @@
 # Deflate Folder
 
-A program that flattens all subdirectories inside a given path. It recursively moves all files from a directory tree to the parent folder, transforming a the directory tree into a single directory with all files along
+A program that flattens all subdirectories inside a given path. It recursively moves all files from a directory tree to the parent folder, transforming the directory tree into a single directory with all files moved to the same folder
 
 This is a Python script, but there's a Windows installer available, so you don't need to run it from Python interpreter.
 
