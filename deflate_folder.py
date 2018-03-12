@@ -50,7 +50,7 @@ def deflate_folder(path, initial_path = "", non_deflated = ""):
                     break
             if ignore_this_file:
                 print "\t\tIgnoring %s (Moving it to 'non_deflated' folder)" % (d)
-                shutil.move(full_path, non_deflated)
+                shutil.move(full_path, os.path.join(non_deflated, d))
             else:
                 if dest != full_path:
                     print "\t\tMoving %s to initial dir" % (d)
