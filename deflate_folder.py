@@ -28,7 +28,7 @@ exclude_files = [
 
 def deflate_folder(path, initial_path = "", non_deflated = ""):
     if initial_path == "":
-        non_deflated = os.path.join(path, 'non_deflated')
+        non_deflated = os.path.join(path, '..', 'non_deflated', os.path.basename(path))
         if not os.path.isdir(non_deflated):
             os.makedirs(non_deflated)
         initial_path = path
